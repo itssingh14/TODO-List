@@ -11,5 +11,14 @@ export class TodoListComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  list = [];
+  item = null;
+  d_item = null;
+  ad(){
+    this.list.push(this.item);
+    this.item = null;
+  }
+  su(){
+    this.list.splice(this.list.indexOf(this.d_item),1);
+  }
 }

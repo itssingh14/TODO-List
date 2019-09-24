@@ -1,8 +1,9 @@
-<mat-card width = 10%>
+<mat-card>
     <mat-list role="list">
-        <mat-list-item role="listitem">Task1 <mat-checkbox></mat-checkbox><mat-icon color = "warn">delete</mat-icon></mat-list-item>
-        <mat-list-item role="listitem">Task2 <mat-checkbox></mat-checkbox><mat-icon color = "warn">delete</mat-icon></mat-list-item>
-        <mat-list-item role="listitem">Task3 <mat-checkbox></mat-checkbox><mat-icon color = "warn">delete</mat-icon></mat-list-item>
-        <mat-list-item role="listitem">Task4 <mat-checkbox></mat-checkbox><mat-icon color = "warn">delete</mat-icon></mat-list-item>
+        <mat-list-item *ngFor="let num of list;">{{num}}<mat-checkbox></mat-checkbox><mat-icon color = "warn" (click) = "su()">delete</mat-icon></mat-list-item>
   </mat-list>
+  <mat-form-field>
+    <input matInput placeholder="Item" [(ngModel)] = "item">
+  </mat-form-field>
+  <button mat-flat-button color = "primary" (click) = "ad()">ADD</button>
 </mat-card>

@@ -11,6 +11,9 @@ import { TodoInputComponent } from './todo-input/todo-input.component';
 import { TodoFooterComponent } from './todo-footer/todo-footer.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +32,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatListModule,
     MatCardModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
