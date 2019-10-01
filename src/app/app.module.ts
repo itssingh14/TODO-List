@@ -14,6 +14,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { todoservices } from './todo.services';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     FormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [todoservices],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

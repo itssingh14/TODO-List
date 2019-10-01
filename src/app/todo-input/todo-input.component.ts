@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { todoservices } from '../todo.services';
 
 @Component({
   selector: 'app-todo-input',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoInputComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private tl:todoservices) { }
   ngOnInit() {
   }
-
+  item
+  ad(){
+    this.tl.setlist(this.item);
+    this.item = null;
+  }
 }

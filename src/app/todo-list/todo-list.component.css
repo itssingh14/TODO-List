@@ -1,3 +1,6 @@
-#list{
-    width : "100px";
+mat-checkbox{
+    margin-left: 10px;
+}
+mat-icon{
+    margin-left: 10px;
 }

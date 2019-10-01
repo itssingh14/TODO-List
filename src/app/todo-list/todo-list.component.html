@@ -1,9 +1,8 @@
 <mat-card>
     <mat-list role="list">
-        <mat-list-item *ngFor="let name of list;">{{name}}<mat-checkbox></mat-checkbox><mat-icon color = "warn" (click) = "su(name)">delete</mat-icon></mat-list-item>
+        <mat-list-item *ngFor="let name of list;">{{name}}
+          <mat-checkbox></mat-checkbox >
+            <mat-icon color = "warn" (click) = "su(name)">delete</mat-icon>
+          </mat-list-item>
   </mat-list>
-  <mat-form-field>
-    <input matInput placeholder="Item" [(ngModel)] = "item">
-  </mat-form-field>
-  <button mat-flat-button color = "primary" (click) = "ad()">ADD</button>
 </mat-card>
